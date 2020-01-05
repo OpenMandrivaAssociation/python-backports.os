@@ -37,7 +37,7 @@ rm -fr %{buildroot}/%{python_sitelib}/backports/{__init__.py*,__pycache__}
 %check
 %{__python} setup.py test
 
-%files -n
+%files
 %license LICENSE
 %doc README.rst
 %{python_sitelib}/backports
