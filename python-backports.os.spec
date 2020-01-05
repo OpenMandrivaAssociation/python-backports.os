@@ -21,15 +21,6 @@ BuildRequires:  python3dist(future)
 This package provides backports of new features in Python's os_ module
 under the backports_ namespace.
 
-%package -n     python-%{pypi_name}
-Summary:        %{summary}
-Group:          Development/Python
-%{?python_provide:%python_provide python-%{pypi_name}}
-
-%description -n python-%{pypi_name}
-This package provides backports of new features in Python's os_ module
-under the backports_ namespace.
-
 %prep
 %autosetup -n %{pypi_name}-%{version}
 
@@ -46,7 +37,7 @@ rm -fr %{buildroot}/%{python_sitelib}/backports/{__init__.py*,__pycache__}
 %check
 %{__python} setup.py test
 
-%files -n python-%{pypi_name}
+%files -n
 %license LICENSE
 %doc README.rst
 %{python_sitelib}/backports
