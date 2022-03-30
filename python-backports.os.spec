@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.1.1
-Release:        1
+Release:        2
 Summary:        Backport of new features in Python's os module
 Group:          Development/Python
 License:        Python Software Foundation License
@@ -41,4 +41,4 @@ rm -fr %{buildroot}/%{python_sitelib}/backports/{__init__.py*,__pycache__}
 %license LICENSE
 %doc README.rst
 %{python_sitelib}/backports
-%{python_sitelib}/%{pypi_name}-%{version}-py?.?.egg-info
+%{python_sitelib}/%{pypi_name}-%{version}-py*.*.egg-info
