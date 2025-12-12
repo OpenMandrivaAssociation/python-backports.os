@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.1.1
-Release:        3
+Release:        4
 Summary:        Backport of new features in Python's os module
 Group:          Development/Python
 License:        Python Software Foundation License
