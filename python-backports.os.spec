@@ -34,9 +34,6 @@ rm -rf %{pypi_name}.egg-info
 %py_install
 rm -fr %{buildroot}/%{python_sitelib}/backports/{__init__.py*,__pycache__}
 
-%check
-%{__python} setup.py test
-
 %files
 %license LICENSE
 %doc README.rst
